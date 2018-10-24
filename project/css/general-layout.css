@@ -6,7 +6,11 @@ body {
 	background: url("../components/imgs/bg.jpg") top left repeat;
 }
 
-main {
+.modal {
+	display: none;
+}
+
+.shopping-window {
 	position: absolute;
 	height: calc(100% - 45px);
 	width: 1200px;
@@ -15,110 +19,88 @@ main {
 	background-color: rgba(0,0,0,0.35);
 }
 
-header, footer {
+.header, .footer {
 	margin: 0;
 	width: 100%;
 	height: 45px;
 	position: absolute;
-	background-color: #2A8676;
+	background: linear-gradient(180deg, #449587, #2A8676);
 	color: rgb(255,255,255);
 	font-family: PT Sans;
 	font-size: 15px;
 }
 
-header {
-	outline-width: 3px;
-	outline-style: outset;
-	outline-color: rgba(94,193,145,0.5);
+.header {
+	border-bottom: 3px solid rgba(94,193,145,0.5);
+    background-clip: content-box;
+    z-index: 50;
 }
 
-footer {
+.footer {
 	bottom: 0;
 }
 
-footer div {
+.footer__text {
 	text-align: center;
 	margin: 10px auto;
 	padding: 3px 5px;
 }
 
-footer div span {
+.shop-name {
 	text-decoration: underline;
 }
 
-.header_wrapper {
+.header__wrapper {
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	height: 44px;
 }
 
-.logout_icon_box, .greeting_box {
+.header__logout, .header__greeting {
 	margin: 0 5px;
 	position: relative;
 	float: right;
 	top: 10px;
 }
 
-.logout_icon_box {
+.header__logout {
 	right: 0;
 	padding: 0 30px 0 2px;
 }
- .trolley_box {
+ .shopping-cart {
  	left: 0;
  	padding: 8px 2px 8px 33px;
  	float: left;
  }
 
- .greeting_box {
+ .header__greeting {
  	padding-top: 5px;
  }
-
- .greeting_box span {
+.username {
  	font-style: italic;
  	padding-left: 4px;
  }
 
-#trolley_img {
+.shopping-cart-img {
 	height: 30px;
 	width: 30px;
 }
 
-#logout_img {
+.header__logout-img {
 	height: 24px;
 	width: 24px;
 }
 
-.device_not_supported {
-	display: none;
-}
 
  @media screen and (max-width: 1200px) {
- 	 .header_wrapper {
+ 	 .header__wrapper {
  	 	position: absolute;
  	 	width: 100%;
  	 }
- 	 main {
+ 	 .shopping-window {
  	 	position: absolute;
  	 	width: 100%;
  	 	margin: 45px 0; 
  	 }
- }
-
- @media screen and (max-width: 480px) {
- 	header, footer, main {
- 		display: none;
- 	}
-
- 	body {
- 		background: repeat none;
- 	}
-
- 	.device_not_supported {
- 		display: block;
- 		margin: 30px;
- 		text-align: center;
- 	}
-
- 	}
  }

@@ -3,23 +3,34 @@
 <head>
 	<title>Demo Shop</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/default.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
-	<div class="header_wrapper">
-		<div class="trolley_box"><img id="trolley_img" src="components/imgs/logo.svg" alt="Shop Logo"/></div>
-		<div class="logout_icon_box"><img id="logout_img" src="components/imgs/header-logout.svg" alt="Logout icon"/></div>
-		<div class="greeting_box">Hello, <span>John_Doe</span></div>
+	<div class="content">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="shopping-cart"><img class="shopping-cart-img" src="components/imgs/logo.svg" alt="Shop Logo"/></div>
+				<div class="header__logout"><img id="header__logout-img" src="components/imgs/header-logout.svg" alt="Logout icon"/></div>
+				<div class="header__greeting">Hello, <span class="username">John_Doe</span></div>
+			</div>
+		</header>
+		<main class="shopping-window"></main>
+		<footer class="footer">
+			<div class="footer__text"><span>Copyright &ldquo;<span class="shop-name">Demo Shop</span>&rdquo;, 2018</span></div>	
+		</footer>
 	</div>
-	</header>
-	<main>
-	</main>
-	<footer>
-		<div>Copyright &ldquo;<span>Demo Shop</span>&rdquo;, 2018</div>		
-	</footer>
-	<div class="device_not_supported">Sorry, your screen is not wide enough for the site :(</div>
+
+	<div class="modal">
+		<div class="modal-component-blurred-background"></div>
+		<div class="modal-component__container">
+			<div class="modal-component__header">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="modal-component__content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>	
+		</div>
+	</div>
 </body>
 </html>
