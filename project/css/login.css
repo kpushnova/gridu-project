@@ -1,0 +1,83 @@
+.modal__content {
+	padding: 35px 60px 30px;
+	
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.login-form__legend {
+	box-sizing: border-box;
+	display: block;
+	text-align: left;
+	color: #000;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "PT sans";
+    padding: 0 0 4px 10px;   
+}
+
+.login-form__input {
+	box-sizing: border-box;
+	height: 50px;
+	width: auto;
+	padding: 0 45px 0 20px;
+	border-radius: 10px;
+	border: 3px solid #fff;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #fff;
+	margin-bottom: 22px;
+	border-radius: 10px;
+	color: #000;
+	font-family: "PT Sans";	
+	font-size: 24px;	
+	line-height: 32px;	
+}
+
+#username {background-image: url("../components/imgs/login-inactive.svg");}
+#password {
+	background-image: url("../components/imgs/password-inactive.svg");
+	background-position-x: 98.5%;
+	background-size: 32px;
+}
+
+.login-form__input:focus {
+	outline-width: 0;
+	border: 3px solid #bfd6d2;
+}
+
+#username:focus {background-image: url("../components/imgs/login-active.svg");}
+#password:focus {background-image: url("../components/imgs/password-active.svg");}
+
+
+.login-form__input:invalid {
+	outline-width: 0;
+	border: 3px solid #FF0000;
+}
+
+#username:invalid {background-image: url("../components/imgs/login-invalid.svg");}
+#password:invalid {background-image: url("../components/imgs/password-invalid.svg");}
+
+
+.login-form__button {
+	display: block;
+	height: 50px;	
+	width: 170px;	
+	border-radius: 5px;	
+	background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+	font-weight: bold;
+	color: #FFF;
+	font-size: 18px;
+	line-height: 23px;
+	font-family: "PT sans caption";
+	align-self: flex-end;
+	margin-top: 5px;
+}
+
+.login-form__button:active {
+	background: linear-gradient(180deg, #1B745F 0%, #2BBCC2 100%);
+}

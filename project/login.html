@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login to Demo Store</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/login-styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="content">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="shopping-cart"><img class="shopping-cart-img" src="components/imgs/logo.svg" alt="Shop Logo"/></div>
+				<div class="header__logout"><img id="header__logout-img" src="components/imgs/header-logout.svg" alt="Logout icon"/></div>
+				<div class="header__greeting">Hello, <span class="username">John_Doe</span></div>
+			</div>
+		</header>
+		<main class="shopping-window"></main>
+		<footer class="footer">
+			<div class="footer__text"><span>Copyright &ldquo;<span class="shop-name">Demo Shop</span>&rdquo;, 2018</span></div>	
+		</footer>
+	</div>
+
+	<div class="modal">
+		<div class="modal__blurred-background"></div>
+		<div class="modal__container">
+			<div class="modal__header">
+				<span>Login to &ldquo;Demo Shop&rdquo;</span>
+			</div>
+			<div class="modal__content">
+				<form class="login-form">
+					<span class="login-form__legend">Your Login:</span>
+					<input type="text" class="login-form__input" id="username" name="login" pattern="[a-zA-Z0-9]{3,50}" />
+					<span class="login-form__legend">Your Password:</span>
+					<input type="password" class="login-form__input" id="password" name="login" pattern="[a-zA-Z0-9]{6,50}" />
+					<input type="Submit" class="login-form__button" name="Submit" value="Submit" />
+				</form>	
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

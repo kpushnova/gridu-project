@@ -14,9 +14,10 @@ body {
     background-image: inherit;
     position: absolute;
     background: rgba(0,0,0,0.2);
+    font-family: "PT Sans Caption";	
 }
 
-.modal-component__blurred-background {
+.modal__blurred-background {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -25,12 +26,12 @@ body {
 	z-index: -4;
 }
 
-.modal-component__container {
+.modal__container {
 	display: flex;
 	flex-direction: column;
 	position: absolute;	
-	width: 700px;
-	height: 250px;
+	width: 570px;
+	height: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -40,32 +41,31 @@ body {
 	z-index: 1;
 }
 
-.modal-component__content, .modal-component__header {
-	width: 700px;
+.modal__content, .modal__header {
+	width: 570px;
 	margin: 0 auto;
 	padding: 25px 19px 20px 20px;
 	box-sizing: border-box;
-	font-family: "PT Sans Caption";	
 	font-size: 22px;		
 	line-height: 29px;	
 	text-align: center;	
 	z-index: 1;
 }
 
-.modal-component__header {
+.modal__header {
 	border-radius: 15px 15px 0 0;
 	background-color: rgba(255,255,255,1);
 	height: 70px;
 	font-weight: bold;	
 }
 
-.modal-component__header p{
+.modal__header p, span {
 	white-space: nowrap;
   	overflow: hidden;
   	text-overflow: ellipsis;
 }
 
-.modal-component__content {
+.modal__content {
 	border-radius: 0 0 15px 15px;
 	background-image: url("../components/imgs/modal-bg.png");
 	flex: 1;
@@ -75,7 +75,7 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-	.modal-component__container {	
+	.modal__container {	
 	width: 85%;
 	height: auto;
 	top: 50%;
@@ -83,7 +83,6 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-	.modal-component__content, .modal-component__header {
+	.modal__content, .modal__header {
 		width: 100%;
 	}
-}
