@@ -1,12 +1,10 @@
 .modal__content {
-	padding: 35px 60px 30px;
-	
+	padding: 35px 60px 30px;	
 }
 
 .login-form {
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 
 .login-form__legend {
@@ -27,9 +25,7 @@
 	padding: 0 45px 0 20px;
 	border-radius: 10px;
 	border: 3px solid #fff;
-	background-repeat: no-repeat;
-	background-position: right;
-	background-color: #fff;
+	background: #fff top right no-repeat;
 	margin-bottom: 22px;
 	border-radius: 10px;
 	color: #000;
@@ -38,11 +34,13 @@
 	line-height: 32px;	
 }
 
-#username {background-image: url("../components/imgs/login-inactive.svg");}
+#username {
+	background-image: url("../components/imgs/login-inactive.svg");
+}
 #password {
 	background-image: url("../components/imgs/password-inactive.svg");
-	background-position-x: 98.5%;
 	background-size: 32px;
+	background-position: 98.5% 40%;
 }
 
 .login-form__input:focus {
@@ -50,8 +48,12 @@
 	border: 3px solid #bfd6d2;
 }
 
-#username:focus {background-image: url("../components/imgs/login-active.svg");}
-#password:focus {background-image: url("../components/imgs/password-active.svg");}
+#username:focus {
+	background-image: url("../components/imgs/login-active.svg");
+}
+#password:focus {
+	background-image: url("../components/imgs/password-active.svg");
+}
 
 
 .login-form__input:invalid {
@@ -59,12 +61,15 @@
 	border: 3px solid #FF0000;
 }
 
-#username:invalid {background-image: url("../components/imgs/login-invalid.svg");}
-#password:invalid {background-image: url("../components/imgs/password-invalid.svg");}
+#username:invalid {
+	background-image: url("../components/imgs/login-invalid.svg");
+}
+#password:invalid {
+	background-image: url("../components/imgs/password-invalid.svg");
+}
 
 
 .login-form__button {
-	display: block;
 	height: 50px;	
 	width: 170px;	
 	border-radius: 5px;	

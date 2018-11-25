@@ -1,29 +1,23 @@
-body {
-	width: 100%;
-	height: 100%;
-	background-image: url("../components/imgs/bg.jpg");
-}
-
 .content {
 	display: none;
 }
 
-.modal {
-    width: 100%;
-    height: 100%;
-    background-image: inherit;
-    position: absolute;
-    background: rgba(0,0,0,0.2);
-    font-family: "PT Sans Caption";	
-}
-
 .modal__blurred-background {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	background: url("../components/imgs/bg.jpg");
 	filter: blur(2px);
-	background-image: inherit;
-	z-index: -4;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+.modal__blurred-background::before {
+	content: '';
+	position: absolute;
+	background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    z-index: -50;	
 }
 
 .modal__container {
@@ -38,7 +32,8 @@ body {
 	border-radius: 15px;
 	box-shadow: 0 0 32px rgba(0,0,0,0.5);
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 2;
+	font-family: "PT Sans Caption";
 }
 
 .modal__content, .modal__header {
@@ -59,7 +54,7 @@ body {
 	font-weight: bold;	
 }
 
-.modal__header p, span {
+.modal__header-text {
 	white-space: nowrap;
   	overflow: hidden;
   	text-overflow: ellipsis;
@@ -86,3 +81,4 @@ body {
 	.modal__content, .modal__header {
 		width: 100%;
 	}
+}	

@@ -3,7 +3,7 @@
 <head>
 	<title>Login to Demo Store</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/login-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -29,9 +29,9 @@
 			</div>
 			<div class="modal__content">
 				<form class="login-form">
-					<span class="login-form__legend">Your Login:</span>
+					<label for="username" class="login-form__legend">Your Login:</label>
 					<input type="text" class="login-form__input" id="username" name="login" pattern="[a-zA-Z0-9]{3,50}" />
-					<span class="login-form__legend">Your Password:</span>
+					<label for="password" class="login-form__legend">Your Password:</label>
 					<input type="password" class="login-form__input" id="password" name="login" pattern="[a-zA-Z0-9]{6,50}" />
 					<input type="Submit" class="login-form__button" name="Submit" value="Submit" />
 				</form>	
