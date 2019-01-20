@@ -18,14 +18,14 @@
 		<main class="shopping-window">
 			
 			<form class="filter-container">
-				<button class="filter__button">Filter options</button>
-				<input class="filter__search" type="search" name="search" placeholder="Filter by text...">
+				<button class="button">Filter options</button>
+				<input class="search" type="search" name="search" placeholder="Filter by text...">
 
-				<div class="filter-section"><title class="filter__title">Availability:</title>
+				<div class="filter-section"><h6 class="filter__title">Availability:</h6>
 					<input type="checkbox" name="availability" class="filter__checkbox">
 					<label for="availability" class="filter__label">Available only</label>
 				</div>
-				<div class="filter-section"><title class="filter__title">Gender:</title>
+				<div class="filter-section"><h6 class="filter__title">Gender:</h6>
 					<input type="radio" name="gender" class="filter__radio">
 					<label for="gender" class="filter__label">Men</label>
 					<input type="radio" name="gender" class="filter__radio">
@@ -33,23 +33,23 @@
 					<input type="radio" name="gender" class="filter__radio">
 					<label for="gender" class="filter__label">Unisex</label>
 				</div>
-				<div class="filter-section"><title class="filter__title">Category:</title>
+				<div class="filter-section"><h6 class="filter__title">Category:</h6>
 					<div class="select-field">
 						<select id="select" class="filter__select">
-						  <option class="filter__option" value="active wear">Active wear</option>
-						  <option class="filter__option" value="underwear">Underwear</option>
-						  <option class="filter__option" value="accesories">Accesories</option>
+						  <option class="select__option" value="active wear">Active wear</option>
+						  <option class="select__option" value="underwear">Underwear</option>
+						  <option class="select__option" value="accesories">Accesories</option>
 						</select>
 					</div>
 				</div>
-				<div class="filter-section" id="filter__rating" ><title class="filter__title">Rating:</title>
+				<div class="filter-section" id="filter__rating" ><h6 class="filter__title">Rating:</h6>
 					<input type="range" name="rating" class="filter__range" min="0" max="5" step="1">		
 				</div>
-				<div class="filter-section" id="filter__price"><title class="filter__title">Price:</title>
+				<div class="filter-section" id="filter__price"><h6 class="filter__title">Price:</h6>
 					<input type="range" name="price" class="filter__range" min="0" max="1000" step="1">
 				</div>
 			</form>
-			<div class="product-section">
+			<div class="product">
 				<div class="img-container">
 					<img src="components/imgs/1.jpg" alt="Proguct-picture" class="product-picture" />
 					<div class="product-rating">
@@ -61,13 +61,14 @@
 					</div>
 				</div>
 				<div class="product-description">
-					<h3 class="product-name">Coat 1 Lorem Ipsum Lorem ipsum dolor sit amet</h3></hr>
+					<h3 class="product-name">Coat 1 Lorem Ipsum Lorem ipsum dolor sit amet</h3>
 					<p class="product-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<span class="product-price">43.17</span>
 					<button class="product-button"></button>
 				</div>
 			</div>
-			<div class="product-section">
+			<div class="product">
+				<div class="img-container">
 				<img src="components/imgs/2.jpg" alt="Proguct-picture" class="product-picture" />
 				<div class="product-rating">
 					<button class="rating-star_active"></button>
@@ -76,14 +77,16 @@
 					<button class="rating-star_active"></button>
 					<button class="rating-star_active"></button>
 				</div>
+				</div>
 				<div class="product-description">
-					<h3 class="product-name">Coat 1 Lorem Ipsum</h3></hr>
+					<h3 class="product-name">Coat 1 Lorem Ipsum</h3>
 					<p class="product-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					<span class="product-price">100.27</span>
 					<button class="product-button"></button>
 				</div>
 			</div>
-			<div class="product-section">
+			<div class="product">
+				<div class="img-container">
 				<img src="components/imgs/3.jpg" alt="Proguct-picture" class="product-picture" />
 				<div class="product-rating">
 					<button class="rating-star_active"></button>
@@ -92,14 +95,16 @@
 					<button class="rating-star_inactive"></button>
 					<button class="rating-star_inactive"></button>
 				</div>
+				</div>
 				<div class="product-description">
-					<h3 class="product-name">Coat 1 Lorem Ipsum</h3></hr>
+					<h3 class="product-name">Coat 1 Lorem Ipsum</h3>
 					<p class="product-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<span class="product-price">24.00</span>
 					<button class="product-button"></button>
 				</div>
 			</div>
-			<div class="product-section">
+			<div class="product">
+				<div class="img-container">
 				<img src="components/imgs/3.jpg" alt="Proguct-picture" class="product-picture" />
 				<div class="product-rating">
 					<button class="rating-star_active"></button>
@@ -108,8 +113,9 @@
 					<button class="rating-star_inactive"></button>
 					<button class="rating-star_inactive"></button>
 				</div>
+				</div>
 				<div class="product-description">
-					<h3 class="product-name">Coat 1 Lorem Ipsum</h3></hr>
+					<h3 class="product-name">Coat 1 Lorem Ipsum</h3>
 					<p class="product-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<span class="product-price">43.17</span>
 					<button class="product-button"></button>

@@ -47,7 +47,7 @@
 	z-index: 6;
 }
 
-.filter__button {
+.button {
 	height: 35px;	
 	width: 140px;	
 	border-radius: 5px;	
@@ -62,11 +62,11 @@
 	right: 255px;
 }
 
-.filter__button:active {
+.button:active {
 	background: linear-gradient(180deg, #1B745F 0%, #2BBCC2 100%);
 }
 
-.filter__search {
+.search {
 	position: absolute;
 	padding: 0 10px;
 	top: -50px;
@@ -96,12 +96,12 @@
 	right: calc(50% - 560px);
 }
 
-.filter__search:focus {
+.search:focus {
 	font-style: normal;
 	border: 2px solid #D8D8D8;
 }
 
-.filter__search::-webkit-input-placeholder {
+.search::-webkit-input-placeholder {
 	font-style: italic;	
 }
 
@@ -238,6 +238,7 @@
 	background: #B8B8B8; 
 	outline: none;
 	margin: 0;
+	padding: 0;
 }
 
 #filter__rating .filter__range {
@@ -251,7 +252,20 @@
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
+	
 }
+
+.filter__range::-moz-range-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #288575;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 0px;
+}
+
+
 
 .filter-section {
 	height: 66px;

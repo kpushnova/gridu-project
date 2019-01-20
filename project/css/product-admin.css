@@ -1,23 +1,20 @@
-
-
 .content {
 	display: flex;
 }
+
+.content, .header, .footer {
+	filter: blur(3px);
+}
+
+/*Styling modal*/
 
 .modal, .modal__container, .modal__content {
 	font-size: 17px;
 }
 
-.modal__container {
-	width: 45em;
-}
-
-.modal__header {
-	width: 100%;
-}
-
 .modal {
-	display: initial;
+	display: flex;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -31,76 +28,17 @@
 }
 
 .modal__container {
-	margin: 50px auto;
-	height: calc(100% - 100px);
-	max-height: 550px;
-}
-
-.filter__title {
-	font: 1em;
-	line-height: 2em;
-	display: inline-block;
-	padding: 3px 12px 0 0;
-	height: auto;
-}
-
-.text-input {
-	height: 2em;
-}
-
-.filter__label, .filter__option {
-	font-size: 0.8em;
-	padding: 0 10px 0 5px;
+	width: 45em;
+	max-height: 580px;
 }
 
 .modal__header {
+	width: 100%;
 	height: auto;
 	font-size: 1.5em;
 	line-height: 2em;
 	padding: 8px 20px;
 }
-
-/*
-
-.content {
-	display: flex;
-}
-
-
-
-.modal-background {
-	background: rgba(0,0,0,0.2);
-	left: 0;
-}
-
-.header::after {
-	z-index: 0;
-}
-
-.footer {
-	position: absolute;
-	bottom: -150px;
-	width: 100%;
-}
-
-/*.shopping-window {
-	z-index: 10;
-	min-height: 700px;
-}*/
-
-.content, .header, .footer {
-	filter: blur(3px);
-}
-
-.header::after {
-	height: 4px;
-}
-
-.modal__container {
-	height: auto;
-}
-
-
 
 .modal__content {
 	width: auto;
@@ -109,11 +47,11 @@
 	flex-wrap: wrap;
 	margin: 0.7em 0 30px 30px;
 	padding: 0;
-	/*max-height: 590px;*/
+	max-height: 590px;
 	align-content: stretch;
 }
 
-
+/*Styling admin filters*/
 
 .filter-section {
 	display: flex;
@@ -124,11 +62,28 @@
 	padding-bottom: 0.5em;
 }
 
+.filter__title {
+	display: block;
+	width: 100%;
+	font: 1em;
+	line-height: 2em;
+	padding: 3px 12px 0 0;
+	margin-bottom: 5px;
+	text-align: start;
+	color: #000;
+	font: 15px PT sans;
+}
+
+.filter__label, .filter__option {
+	font-size: 0.8em;
+	padding: 0 10px 0 5px;
+}
+
 .text-input {
 	height: 2em;
 	width: calc(100% - 30px);
 	border-radius: 5px;
-	background-color: #FFFFFF;
+	background: #FFFFFF;
 	padding: 0 15px;
 	box-sizing: border-box;
 	font: 14px PT sans;
@@ -144,21 +99,9 @@
 	display: block;
 	width: 50%;
 	min-width: 300px;
-	align-self: flex-end;
-	padding-bottom: 30px;
-}
-
-
-
-.filter__title {
-	display: block;
-	width: 100%;
-	line-height: 2em;
-	margin-bottom: 5px;
-	text-align: start;
-	height: 18px;
-	color: #000;
-	font: 15px PT sans;
+	padding: 2px 0px 0px 0px; 
+	margin-bottom: auto;
+	margin-top: 2em;
 }
 
 .filter__button {
@@ -272,13 +215,29 @@
 	}
 
 @media screen and (max-width: 1300px) {
+
 .modal, .modal__container, .modal__content {
 	font-size: 15px;
+}
+
+.modal__container {
+	max-height: 550px;
+}
+
+.modal__content {
+	max-height: 490px;
 }
 }
 
 
 @media screen and (max-width: 740px) {
+
+	html, body, .content, .modal, .modal-background {
+		position: absolute;
+		min-height: 80em;
+		height: auto;
+	}
+
 	.filter-section {
 		width: 100%;
 	}
@@ -295,62 +254,7 @@
 		max-height: 24em;
 	}
 
-	html, body, .content, .modal, .modal-background {
-		position: absolute;
-		min-height: 80em;
-		height: auto;
-	}
-
 	.modal-background {
 		min-height: 85em;
 	}
 }
-
-/*@media screen and (max-width: 800px) {
-	html, body, .content {
-	min-height: 100%;
-    min-width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-}
-@media screen and (max-width: 750px) {
-
-.shopping-window {
-	background: rgba(0,0,0,0);
-}
-
-.modal {
-	height: auto;
-	background: rgba(0,0,0,0.4);
-}
-
-.modal__container {	
-	width: 85%;
-	height: auto;
-}
-
-.filter-section {
-	width: 100%;
-}
-
-.modal__content {
-	height: auto;
-	max-height: 2000px;
-	padding-right: 30px;
-}
-
-#buttons-section {
-	width: 100%;
-}
-
-#cancel-button {
-	margin-left: 30px;
-}
-
-.modal__content, .modal__header {
-	width: 100%;
-}
-
-}*/

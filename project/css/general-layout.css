@@ -82,13 +82,13 @@ body {
 	right: 0;
 	padding: 0 30px 0 2px;
 }
- .shopping-cart {
+.shopping-cart {
  	left: 0;
  	padding: 8px 2px 8px 33px;
  	float: left;
  }
 
- .header__greeting {
+.header__greeting {
  	padding-top: 5px;
  }
 .username {
@@ -96,7 +96,7 @@ body {
  	padding-left: 4px;
  }
 
-.shopping-cart-img {
+.shopping-cart__img {
 	height: 30px;
 	width: 30px;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 
- @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
  	 .header__wrapper {
  	 	position: absolute;
  	 	width: 100%;
@@ -121,121 +121,3 @@ body {
  	 	top: 44px;
  	 }
  }
-
-
-/*body {
-	margin: 0;	
-}
-
-.modal, .product-section {
-	display: none;
-}
-
-.content {
-	background: url("../components/imgs/bg.jpg") top left repeat;
-	display: flex;
-	position: absolute;
-    height: auto;
-    min-height: 100%;
-    width: 100%;
-    top: 0;
-}
-
-.shopping-window {
-	position: absolute;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-around;
-	top: 0;
-	bottom: 0;
-	width: 1200px;
-	padding: 70px 15px;
-	box-sizing: border-box;
-	margin: 45px calc(50% - 600px) 45px calc(50% - 600px);
-    background: rgba(0,0,0,0.35);
-}
-
-.header, .footer {
-	margin: 0;
-	width: 100%;
-	height: 45px;
-	position: absolute;
-	background: linear-gradient(180deg, #449587, #2A8676);
-	color: rgb(255,255,255);
-	font-family: PT Sans;
-	font-size: 15px;
-}
-
-.header {
-	border-bottom: 3px solid rgba(94,193,145,0.5);
-    background-clip: content-box;
-    z-index: 50;
-}
-
-.footer {
-	bottom: 0;
-}
-
-.footer__text {
-	text-align: center;
-	margin: 10px auto;
-	padding: 3px 5px;
-}
-
-.shop-name {
-	text-decoration: underline;
-}
-
-.header__wrapper {
-	position: relative;
-	width: 1200px;
-	margin: 0 auto;
-	height: 44px;
-}
-
-.header__logout, .header__greeting {
-	margin: 0 5px;
-	position: relative;
-	float: right;
-	top: 10px;
-}
-
-.header__logout {
-	right: 0;
-	padding: 0 30px 0 2px;
-}
- .shopping-cart {
- 	left: 0;
- 	padding: 8px 2px 8px 33px;
- 	float: left;
- }
-
- .header__greeting {
- 	padding-top: 5px;
- }
-.username {
- 	font-style: italic;
- 	padding-left: 4px;
- }
-
-.shopping-cart-img {
-	height: 30px;
-	width: 30px;
-}
-
-.header__logout-img {
-	height: 24px;
-	width: 24px;
-}
-
-@media screen and (max-width: 1200px) {
- 	.shopping-window {
- 	 	width: 100%;
- 	 	margin: 45px 0;
- 	 }
-
- 	.header__wrapper {
- 		width: 100%;
- 	}
- }
-*/
