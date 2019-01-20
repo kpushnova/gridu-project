@@ -1,6 +1,6 @@
 @import "default.css";
 
-/*Styles for common layout with no products index.html*/
+/*Styles for common layout with no products*/
 
 /*@import "general-layout.css";*/
 
@@ -26,15 +26,15 @@
 
 /*@import "general-layout.css";
 @import "products-list.css";
-@import "product-customer.css";*/
-
+@import "product-customer.css";
+*/
 /*Styles for admin page*/
 
 @import "general-layout.css";
-@import "modal-component.css";
+/*@import "modal-component.css";*/
 @import "products-list.css";
 @import "product-customer.css";
-@import "product-admin.css";
+/*@import "product-admin.css";*/
 
 
 

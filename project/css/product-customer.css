@@ -1,0 +1,126 @@
+html, body, .content {
+	min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.shopping-window {
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 70px 30px 0;
+}
+
+/*Navigation panel*/
+
+.site-nav__link, .category-type {
+	position: absolute;
+	top: 75px;
+	color: white;
+	font-family: 'PT sans';	
+}
+
+.site-nav__link {
+	left: calc(50% - 570px);
+}
+
+.category-type {
+	right: calc(50% - 570px);
+}
+
+.category-name, .site-nav__link {
+	font: bold 16px PT sans;
+}
+
+.product-section {
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: initial;
+	background: url("../components/imgs/modal-bg.png");
+	padding: 20px;
+	margin: 0 0 30px 0;
+}
+
+.img-container {
+	flex: 4;
+	min-width: 310px;
+}
+
+.product-rating {
+	margin-top: -32px;
+}
+
+.product-description {
+	flex: 5;
+	height: initial;
+	background: rgba(0,0,0,0);
+	padding: 0 0 0 20px;
+	min-width: 375px;
+}
+
+.product-name {
+	font-size: 24px;
+	line-height: 30px;
+	overflow: scroll;
+	max-height: 24px;
+	padding: 0 0 8px 0;
+
+}
+
+.product-in-stock {
+	font: normal 16px PT sans;
+	display: inline-block;
+	padding-left: 7px;
+}
+
+.product-button::before {
+	content: 'Buy';
+	font: normal 14px PT sans;
+}
+
+.product_description__text {
+	margin-top: 20px;
+}
+
+.product-button {
+	bottom: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.shopping-window {
+		width: 100%;
+	}
+
+	.site-nav__link {
+		left: 30px;
+	}
+
+	.site-nav__link {
+	left: 30px;
+	}
+
+.category-type {
+	right: 30px;
+	}
+}
+
+@media screen and (max-width: 804px) {
+
+.shopping-window {
+	flex-direction: column;
+}
+
+.product-description {
+	padding: 20px;
+	padding-left: 0;
+}	
+
+.product-name {
+	max-height: initial;
+	line-height: 26px;
+	overflow: initial;
+}
+}
